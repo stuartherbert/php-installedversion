@@ -1,0 +1,17 @@
+{
+    "name": "stuart/php-myversion",
+    "description": "Ask Composer which version of a package has been installed",
+    "license": "New BSD license",
+    "authors": [
+        {
+            "name": "Stuart Herbert",
+            "email": "stuart@stuartherbert.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Stuart": [ "php", "tests" ]
+        }
+    },
+    "minimum-stability": "stable"
+}
