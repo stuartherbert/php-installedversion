@@ -93,7 +93,7 @@ class MyVersion
 		$topDir = $this->getTopDir();
 
 		$currentBranch = rtrim(`cd $topDir && git rev-parse --abbrev-ref HEAD`);
-		$currentCommit = rtrim(`cd $topDir && git rev-parse HEAD`);
+		$currentCommit = rtrim(`cd $topDir && git rev-parse --short HEAD`);
 
 		return "dev-" . $currentBranch . '-' . $currentCommit;
 	}
